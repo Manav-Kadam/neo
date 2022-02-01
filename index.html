@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Home-Neoloop</title>
+</head>
+
+<body>
+
+
+
+  <header>
+
+
+    <a href="#" class="logo"><img class="logo" src="images/logo.png">Neoloop</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#data">Advantage</a></li>
+        <li><a href="#visual">Visualization</a></li>
+        <li><a href="#ai">AI</a></li>
+        <li> <a href="contact.html"> <button class="nav-btn">Get Started</button></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <section id="home">
+    <h1>Database for AI</h1>
+    <h2>AI-native way of working with data.
+      No boilerplate code.</h2>
+    <h3>The fastest open-source dataset format for data-centric computer vision workflows.</h3>
+    <a href="contact.html">Get Started</a>
+    <a href="contact.html">Visualize your data</a>
+    <img class="home-img" src="images/home.jpg" alt="">
+  </section>
+
+
+
+  <section id="model">
+    <img src="images/bird.png" alt="">
+    <div class="model-text">
+      <h1>Your model's gonna love your data.
+        <span>You will, too</span>
+      </h1>
+      <h2>As a machine learning engineer, you can spend weeks setting up your data. It takes far too long to download or copy your data, collaborate on it with your team or connect it to your ML models. Our open-source package Hub neatly rearranges
+        your data into NumPy-like arrays on the cloud that are native to deep learning frameworks. Thanks to that, you can finally break data silos and stream your data straight to your GPUs without sacrificing performance.</h2>
+      <a href="contact.html">Check out our Repo</a>
+    </div>
+  </section>
+
+
+
+  <section id="data">
+    <h1>Better data for your team, at scale</h1>
+    <div class="cards">
+
+      <div class="card">
+        <img src="images/one.png" alt="">
+        <h2>Load Data from Anywhere</h2>
+        <h3>Hub works locally, on Google Cloud, MinIO, AWS, Azure as well as neoloop storage (no servers needed). Load data (even from Kaggle!) and directly stream datasets from cold storage to ML workflows. It's that fast.</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/two.png" alt="">
+        <h2>Dataset Version Control</h2>
+        <h3>Modify dataset elements across different versions and seamlessly switch between them. Hub's intuitive Python API works with datasets of any size and overcomes the limitations of file-based version control.</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/three.png" alt="">
+        <h2>Transformations at Scale</h2>
+        <h3>Quickly modify, update, or resample your datasets in order to find the optimal dataset for your models. Scale to hundreds of machines with one line of code.</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/four.png" alt="">
+        <h2>Scalable Model Training</h2>
+        <h3>Stream your dataset to PyTorch or TensorFlow with one line of code. Train in a distributed fashion with Ray to efficiently utilize your compute resources.</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/five.png" alt="">
+        <h2>Team and Access Management</h2>
+        <h3>Keep your datasets private, share them with your organization or anyone on the web. Have multiple data scientists working on the same data? We can handle that, too.</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/six.png" alt="">
+        <h2>Dataset Querying</h2>
+        <h3>Easily filter, subset or query terabyte-scale datasets to generate instant insights and uncover opportunities for dataset optimization.</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="visual">
+    <h1>Visualize any computer vision dataset</h1>
+    <h2>Instantly visualize any slice of the dataset you upload to Hub.</h2>
+    <div class="layer">
+      <img src="images/desk.jpg" alt="">
+    </div>
+  </section>
+
+
+  <section id="open">
+    <h1>Open data, one click away</h1>
+    <div class="divid">
+
+      <div class="dividing">
+        <h2>Explore verified datasets
+          by team neoloop...</h2>
+        <img src="images/first.png" alt="">
+      </div>
+
+      <div class="dividing">
+        <img src="images/second.png" alt="">
+        <h2>... public organizations
+          (like Google!) ...</h2>
+      </div>
+
+      <div class="dividing">
+        <h2>... and our open-source
+          community!</h2>
+        <img src="images/third.png" alt="">
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="ai">
+    <h1>Data-centric AI is easy</h1>
+    <div class="align-link">
+      <a href="#!" class="links neo active" data-section-id="1">Access Data</a>
+      <a href="#!" class="links" data-section-id="2">Create Datasets Manually</a>
+      <a href="#!" class="links" data-section-id="3">Create Datasets Automatically</a>
+      <a href="#!" class="links" data-section-id="4">Connect to ML Frameworks</a>
+    </div>
+    <section class="conteudo neo active" data-section-id="1">
+      <div class="codes">
+        <p>
+          <span>import</span> hub <br>
+          <span>from</span> PIL <span>import</span> Image <br><br>
+
+          ds = hub.load(<strong>'hub://neoloop/mnist-train'</strong>) <em># Hub Dataset</em> <br><br>
+
+          <em># Display an image</em /><br>
+          Image.fromarray(ds.images[0].numpy())<br>
+        </p>
+      </div>
+    </section>
+    <section class="conteudo" data-section-id="2">
+      <div class="codes">
+        <p>
+          <span>import</span> hub <br><br>
+
+          ds = hub.empty(<strong>'./dataset_dir'</strong>)<br><br>
+
+          ds.create_tensor(<strong>'images'</strong>)<br><br>
+
+          ds.images.append(np.ones((<b>100</b>,<b>100</b>,<b>3</b>)))<br>
+          ds.images.append(np.ones((<b>200</b>,<b>100</b>,<b>3</b>))) <em>#Images can have different shape</em><br>
+        </p>
+      </div>
+    </section>
+
+    <section class="conteudo" data-section-id="3">
+      <div class="codes">
+        <p>
+          <span> import hub </span> <br> <br>
+
+          <em> #kaggle link #Hub storage location </em> <br>
+          ds = hub.ingest(<strong>'kaggle_path'</strong>, <strong>'s3://my_bucket_name/dataset_folder'</strong>) <br>
+        </p>
+      </div>
+    </section>
+    <section class="conteudo" data-section-id="4">
+      <div class="codes">
+        <p>
+          <span> import</span> hub <br>
+          ds = hub.load(<strong>'hub://neoloop/mnist_train'</strong>) <em># Hub Dataset</em> <br><br>
+
+          <em># PyTorch Dataloader</em> <br>
+          dataloader = ds.pytorch(, ...) <br><br>
+
+          <em># TensorFlow Dataset - COMING SOON</em> <br>
+          ds_tf = ds.tensorflow()<br>
+        </p>
+      </div>
+    </section>
+  </section>
+
+
+  <section id="gpu">
+    <div class="align">
+      <div class="">
+        <h1>Your models and GPUs need organized & streamable data.</h1>
+        <h2>The future of Machine Learning is data-centric.
+          Store your data in AI-native format with neoloop Hub.</h2>
+      </div>
+      <div class="">
+        <h3><strong>>&emsp;</strong> pip <b>install</b> hub</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="footer">>
+
+    <div class="div">
+      <div class="divident">
+        <a href="#" class="logo"><img class="logo" src="images/logo.png">Neoloop</a>
+        <ul>
+          <li>Simple API for creating, storing, and collaborating on AI datasets at scale.</li>
+        </ul>
+
+      </div>
+      <div class="divident">
+        <h3>Solution</h3>
+        <ul>
+          <li>Drones & Satellite Imagery</li>
+          <li>Self-driving Cars and Robotics</li>
+          <li>Biomedical</li>
+        </ul>
+      </div>
+      <div class="divident">
+        <h3>Company</h3>
+        <ul>
+          <li>About</li>
+          <li>Contact us</li>
+          <li>Careers</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+      <div class="divident">
+        <h3>Quik Links</h3>
+        <ul>
+          <li><a href="mailto:hello@neoloop.com">
+              <p>hello@neoloop.com</p>
+            </a></li>
+          <li><a href="legal.html">Legal Notice</a></li>
+          <li><a href="https://www.linkedin.com/company/neo-loop-1" class="fab fa-linkedin linked"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">&copy; NeoLoop All Rights Reserved</div>
+
+
+  </section>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
